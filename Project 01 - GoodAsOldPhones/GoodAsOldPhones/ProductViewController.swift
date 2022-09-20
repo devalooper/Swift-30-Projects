@@ -8,12 +8,12 @@
 import UIKit
 
 class ProductViewController: UIViewController {
-
+  
   @IBOutlet var productImageView: UIImageView!
   @IBOutlet var productNameLabel: UILabel!
   
   var product: Product?
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -23,7 +23,7 @@ class ProductViewController: UIViewController {
       productImageView.image = UIImage(named: imageName)
     }
   }
-
+  
   @IBAction func addToCartButtonDidTap(_ sender: AnyObject) {
     print("Add to cart successfully")
   }
